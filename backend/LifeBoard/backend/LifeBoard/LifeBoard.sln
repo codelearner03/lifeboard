@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeBoard.API", "LifeBoard.API\LifeBoard.API.csproj", "{1F78D0D4-81B8-4ED5-AD22-234DE9B407D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F78D0D4-81B8-4ED5-AD22-234DE9B407D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F78D0D4-81B8-4ED5-AD22-234DE9B407D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F78D0D4-81B8-4ED5-AD22-234DE9B407D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F78D0D4-81B8-4ED5-AD22-234DE9B407D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED6A787F-724F-44E3-B38B-C705B340F5A9}
+	EndGlobalSection
+EndGlobal
