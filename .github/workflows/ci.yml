@@ -1,4 +1,4 @@
-name: LifeBoard CI
+﻿name: LifeBoard CI
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./backend/LifeBoard.API/backend/LifeBoard/LifeBoard.API/LifeBoard.API.csproj
+        run: dotnet restore ./backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj
 
       - name: Build
-        run: dotnet build ./backend/LifeBoard.API/backend/LifeBoard/LifeBoard.API/LifeBoard.API.csproj --no-restore --configuration Release
+        run: dotnet build ./backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj --no-restore --configuration Release
