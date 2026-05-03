@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Habits\" />
     <Folder Include="DTOs\Dashboard\" />
     <Folder Include="DTOs\Tasks\" />
     <Folder Include="Middleware\" />

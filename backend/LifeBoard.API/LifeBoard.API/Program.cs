@@ -89,6 +89,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<JwtHelper>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IGoalService, GoalService>();
+builder.Services.AddScoped<IHabitService, HabitService>();
 
 var app = builder.Build();
 
