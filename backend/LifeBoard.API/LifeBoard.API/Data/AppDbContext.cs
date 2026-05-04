@@ -12,6 +12,7 @@
             public DbSet<Goal> Goals { get; set; }
             public DbSet<Habit> Habits { get; set; }
             public DbSet<HabitLog> HabitLogs { get; set; }
+            public DbSet<Models.Task> Tasks { get; set; }
             public DbSet<LifeScore> LifeScores { get; set; }
 
             protected override void OnModelCreating(ModelBuilder modelBuilder)

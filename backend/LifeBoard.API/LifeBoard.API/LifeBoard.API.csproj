@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="DTOs\Dashboard\" />
-    <Folder Include="DTOs\Tasks\" />
     <Folder Include="Middleware\" />
     <Folder Include="Repositories\Interfaces\" />
     
