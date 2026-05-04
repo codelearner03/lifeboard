@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Dashboard\" />
     <Folder Include="Middleware\" />
     <Folder Include="Repositories\Interfaces\" />
     
