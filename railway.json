@@ -1,1 +1,10 @@
-﻿{"$schema":"https://railway.com/railway.schema.json","build":{"builder":"NIXPACKS","buildCommand":"dotnet restore backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj && dotnet publish backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj -c Release -o /app/publish"},"deploy":{"startCommand":"dotnet /app/publish/LifeBoard.API.dll","restartPolicyType":"ON_FAILURE"}}
+﻿{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "dotnet restore backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj && dotnet publish backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj -c Release -o /app/publish"
+  },
+  "deploy": {
+    "startCommand": "dotnet /app/publish/LifeBoard.API.dll",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
