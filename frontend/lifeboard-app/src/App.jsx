@@ -5,6 +5,8 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Goals from './pages/goals/Goals';
 import Habits from './pages/habits/Habits';
 import Tasks from './pages/tasks/Tasks';
+import Profile from './pages/profile/Profile';
+import NotFound from './pages/NotFound';
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem('token');
@@ -28,11 +30,12 @@ function App() {
       <Route path="/tasks" element={
         <PrivateRoute><Tasks /></PrivateRoute>
       } />
-      <Route path="*" element={<Navigate to="/login" />} />
+      <Route path="/profile" element={
+        <PrivateRoute><Profile /></PrivateRoute>
+      } />
+      <Route path="/404"   element={<NotFound />} />
+      <Route path="*"      element={<Navigate to="/404" />} />
     </Routes>
-  );
-
-}
-
+  );}
 
 export default App;
