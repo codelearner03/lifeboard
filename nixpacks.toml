@@ -1,0 +1,14 @@
+[phases.setup]
+nixPkgs = ["dotnet-sdk_8"]
+
+[phases.install]
+cmds = []
+
+[phases.build]
+cmds = [
+  "dotnet restore backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj",
+  "dotnet publish backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj -c Release -o /app/publish"
+]
+
+[start]
+cmd = "dotnet /app/publish/LifeBoard.API.dll"
