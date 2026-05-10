@@ -1,15 +1,16 @@
 [phases.setup]
 nixPkgs = ["dotnet-sdk_8"]
-aptPkgs = ["dotnet-sdk-8.0"]
 
 [phases.install]
 cmds = []
 
 [phases.build]
 cmds = [
+  "curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --version 8.0.404 --install-dir /usr/share/dotnet",
+  "export PATH=$PATH:/usr/share/dotnet",
   "dotnet restore backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj",
   "dotnet publish backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj -c Release -o /app/publish"
 ]
 
 [start]
-cmd = "dotnet /app/publish/LifeBoard.API.dll"
+cmd = "DOTNET_ROOT=/usr/share/dotnet PATH=$PATH:/usr/share/dotnet dotnet /app/publish/LifeBoard.API.dll"
