@@ -4,9 +4,10 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["LifeBoard.API.csproj", "."]
-RUN dotnet restore "LifeBoard.API.csproj"
-COPY . .
+COPY ["backend/LifeBoard.API/LifeBoard.API/LifeBoard.API.csproj", "LifeBoard.API/"]
+RUN dotnet restore "LifeBoard.API/LifeBoard.API.csproj"
+COPY backend/LifeBoard.API/LifeBoard.API/. LifeBoard.API/
+WORKDIR "/src/LifeBoard.API"
 RUN dotnet build "LifeBoard.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
